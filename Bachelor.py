@@ -151,7 +151,6 @@ prod = extract_gen().sum();
 result = [];
 
 print(annuity_factor);
-#print(prod);
     
 "Eigentliche MC-Simulation"
 
@@ -169,5 +168,5 @@ for i in range(0,10000):
     result.append(value);
 
 "Formatieren und Herausschreiben der Ergebnisse"
-#result = pd.DataFrame(result);    
-#result.to_csv(path_or_buf='C:\\Users\\Franz Georg\\Documents\\Uni\\Bachelorarbeit\\Daten\\Results.csv');
+result = pd.DataFrame(result);    
+result.to_csv(path_or_buf='C:\\Users\\Franz Georg\\Documents\\Uni\\Bachelorarbeit\\Daten\\Results.csv');
